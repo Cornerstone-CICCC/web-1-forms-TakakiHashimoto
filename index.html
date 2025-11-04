@@ -9,6 +9,57 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"/>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"/>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" name="name" id="name"/>
+         </fieldset>
+
+         <fieldset>
+            <legend>Preference</legend>
+            <label for="color">Favorite Color:</label>
+            <input type="color" name="color" id="color"/>
+            <label for="hobby">Hobby:</label>
+            <input type="text" id="hobby" name="hobby" />
+            <label for="experience">Experience Level:</label>
+            <input type="range" id="experience" name="experience" min="1" max="100" />
+         </fieldset>
+
+         <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <select name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="SMS">SMS</option>
+            </select>
+            <label for="yes">Subscribe to newsletter</label>
+            <input type="checkbox" id="yes" value="yes">
+         </fieldset>
+
+         <fieldset>
+            <legend>More Information</legend>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="9" cols="75"></textarea>
+         </fieldset>
+
+         <fieldset>
+            <legend>Upload Documents</legend>
+            <label for="document">Resume and other certificates</label>
+            <input type="file" name="document" id="document" />
+         </fieldset>
+
+         <fieldset id="submission">
+            <legend>Submission</legend>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+         </fieldset>
     </form>
 </body>
 </html>
